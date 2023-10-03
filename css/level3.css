@@ -7,19 +7,15 @@
   flex-direction: column;
 }
 .level3__container {
-  margin-left: 240px;
-  margin-right: 240px;
-  margin-top: 160px;
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-top: 10%;
   margin-bottom: 40px;
   height: 50px;
   width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../images/Vector\ 1.svg);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-position-y: 25px;
 }
 .button-view-all {
   color: #fb8f1d;
@@ -29,19 +25,21 @@
   line-height: 60px;
   border: none;
   background: transparent;
-  margin-top: 12px;
-  padding-right: 10px;
+  margin-top: 1%;
+}
+.title3{
+  width: 70%;
 }
 .image-container {
   display: flex;
   align-items: center;
   width: auto;
-  margin-left: 240px;
-  margin-right: 240px;
+  margin-left: 16%;
+  margin-right: 16%;
 }
 .image-item {
   position: relative;
-  margin-right: 20px;
+  margin-right: 1.5%;
 }
 .image-item img {
   max-width: 100%;
@@ -49,8 +47,8 @@
   border-radius: 10px;
 }
 .rectangle {
-  width: 120px;
-  height: 56px;
+  width: 50%;
+  height: 20%;
   flex-shrink: 0;
   position: absolute;
   bottom: 0;
@@ -75,4 +73,135 @@
   line-height: 24px;
   margin-block-start: 0;
   margin-block-end: 5px;
+}
+@media screen and (max-width: 2560px) {
+  .city {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  .country {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .level3 {
+    height: 920px;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два стовпці однакової ширини */
+    grid-gap: 5%; /* Відступ між картинками */
+    margin-left: 28%;
+  }
+  .image-item {
+    width: 60%;
+    margin-bottom: 20px; /* Відступ між рядами */
+    box-sizing: border-box; /* Розрахунок ширини включаючи відступи */
+  }
+  .rectangle {
+    width: 60%;
+    height: 20%;
+  }
+  .city {
+    font-size: 16px;
+  }
+  .country {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .city {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  .country {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .level3 {
+    height: 1450px;
+  }
+  .title3{
+    font-size: 32px;
+  }
+  .image-container {
+    display: block; /* Змінюємо на блочний вигляд */
+    text-align: center; /* Вирівнюємо по центру */
+    margin-left: 40%;
+  }
+  .button-view-all {
+    font-size: 15px;
+  } 
+}
+@media screen and (max-width: 680px) {
+  .title3{
+    font-size: 30px;
+  }
+  .city {
+    font-size: 12px;
+    line-height: 5px;
+  }
+  .country {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title3{
+    font-size: 26px;
+  }
+  .city {
+    font-size: 9px;
+    line-height: 5px;
+  }
+  .country {
+    font-size: 7px;
+    line-height: 17px;
+  }
+  .level3 {
+    height: 980px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .level3{
+    height: 1300px;
+  }
+  .level3__container{
+    margin-bottom: 20px;
+  }
+  .title3{
+    font-size: 22px;
+  }
+  .city {
+    font-size: 9px;
+    line-height:5px;
+  }
+  .country {
+    font-size: 7px;
+    line-height: 18px;
+  }
+  .button-view-all{
+    font-size: 12px;
+  }
+  .image-item {
+    width: 80%;
+    margin-bottom: 20px; /* Відступ між рядами */
+    box-sizing: border-box; /* Розрахунок ширини включаючи відступи */
+  }
+  .image-container{
+    margin-left: 70px;
+    margin-right: 50px;
+  }
+  .image-item{
+    margin-right: 0;
+    transition: transform 0.3s ease;
+  }
+  .image-item:hover{
+    animation: zoom-in 0.3s forwards;
+  }
+}
+@media screen and (max-width: 395px){
+  .level3{
+    height: 1000px;
+  }
 }

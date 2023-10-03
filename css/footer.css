@@ -1,9 +1,9 @@
 .logo-container {
-  margin-left: 190px;
-  margin-right: 135px;
+  margin-left: 12.5%;
+  margin-right: 10%;
   margin-top: 35px;
   margin-bottom: 25px;
-  width: 1240px;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +12,7 @@
   margin-block-start: 15px;
 }
 .organization {
-  width: 391px;
+  width: 32%;
   color: #848484;
   font-family: "Mulish", sans-serif;
   font-size: 17px;
@@ -20,12 +20,12 @@
   line-height: 28px;
 }
 .footer__rectangle {
-  width: 1219px;
+  width: 78%;
   height: 0.6px;
   flex-shrink: 0;
   background: #c4c4c4;
-  margin-left: 190px;
-  margin-right: 190px;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
 .icons {
   display: flex;
@@ -38,3 +38,22 @@
   padding-top: 35px;
   height: 22px;
 }
+@media screen and ( max-width: 780px){
+  .title2{
+    width: 60%;
+  }
+}
+@media screen and ( max-width: 410px){
+ .icons img{
+  margin-bottom: 40px;
+ }
+ .logo-container{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .organization{
+  width: 100%;
+ }
+}
+
